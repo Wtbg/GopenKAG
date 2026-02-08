@@ -1,0 +1,25 @@
+# GopenKAG Configuration
+
+# LLM Configuration (OpenAI Compatible)
+llm:
+  api_key: "YOUR_API_KEY_HERE"
+  base_url: "https://api.openai.com/v1" # Or your local/other provider URL
+  model: "gpt-3.5-turbo" # Or deepseek-chat, etc.
+  temperature: 0.0
+
+# Neo4j Configuration
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "password"
+
+# Extraction Settings
+extraction:
+  chunk_size: 1000
+  chunk_overlap: 200
+  language: "zh" # Chinese
+
+# App Settings
+app:
+  title: "GopenKAG: 狂飙知识图谱"
+  version: "0.1.0"
